@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-Form</title>
+    <style>
+        body{
+            background-image: url('back.jpg');
+            font-family:Arial, sans-serif;
+            color: white;
+            
+        }
+       .container{
+        border: 2px solid grey;
+        width: 70%;
+        height: 80vh;
+        margin: 50px auto;
+        border-radius: 10px;
+        backdrop-filter:blur(15px);
+        
+        
+       }
+       input[type="text"]{
+        display: block;
+        width: 60%;
+        
+        border: none;
+        outline: none;
+        padding: 4px;
+        border-bottom: 2px solid rgb(254, 255, 255,0.5);
+        background: transparent;
+       }
+       input[type="text"]:focus{
+        border-bottom:2px solid  rgb(254, 255, 255,1.0);
+       }
+       [type="checkbox"]{
+        display: inline;
+       }
+       .login-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+       }
+       .checkbox{
+        display: flex;
+        gap: 5px;
+       }
+       .form-label{
+        
+        width: 63%;
+
+       }
+       .btn{
+        width: 30%;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+       }
+       a{
+        font-size: 10px;
+        text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+  <div class="container">
+     
+       <form action="" class="login-container">
+        <h3>Login</h3>
+       <div class="form-label">
+        <label for="">Email</label>
+        </div>
+       <input type="text">
+       <div class="form-label">
+        <label for="">Password</label>
+        </div>
+        <input type="text">
+       
+        <div class="checkbox">
+        <input type="checkbox">
+        <p>Remember Me <a href="#">Forget Password</a></p>
+        </div>
+      
+        
+        <button class="btn">Login</button> 
+       
+       
+        <p>Don't have account <a href="#">Register</a></p>
+       </form>
+
+  </div>
+</body>
+</html>
